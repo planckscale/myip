@@ -1,0 +1,25 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+
+mainClassName = 'home.ip.IpApp'
+
+repositories {
+    mavenCentral()
+}
+
+jar {
+    baseName = 'my.ip'
+//    version =  '0.1.0'
+}
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    testCompile "junit:junit:4.12"
+}
+
+
